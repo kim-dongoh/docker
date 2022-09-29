@@ -1,0 +1,7 @@
+version: '2'
+services:
+  ubuntu:
+    image: ubuntu:20.04
+    container_name: ubuntu
+    hostname: ubuntu
+    command: tail -f /dev/null
