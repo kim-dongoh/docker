@@ -10,14 +10,17 @@
 # docker volume mount 문제
 > https://github.com/osixia/docker-openldap#fix-docker-mounted-file-problems
 
-docker-compose.yml 파일의 경우 아래 라인 추가
+## docker-compose.yml
 ```
 command: "--copy-service"
 ```
+`--copy-service` 명령어 추가
 
-docker CLI의 경우 아래오 같이 사용
+
+## docker CLI
 ```
 docker run \
 	--volume ./ldap_users:/container/service/slapd/assets/config/bootstrap/ldif/custom \
 	osixia/openldap:1.5.0 --copy-service
 ```
+`--copy-service` 옵션 추가
