@@ -12,5 +12,8 @@ docker exec -it ubuntu /bin/bash
 
 # 필요한 패키지 Install
 ```
+apt update
+```
+```
 apt install -y python3 python3-pip wget software-properties-common git vim
 ```
